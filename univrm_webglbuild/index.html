@@ -7,7 +7,7 @@
   </head>
   <body style="text-align: center">
     <canvas id="unity-canvas" width=960 height=600 style="width: 960px; height: 600px; background: #231F20"></canvas>
-    <script src="Build/build.loader.js"></script>
+    <script src="Build/univrm_webglbuild.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -18,9 +18,9 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/build.data.gz",
-        frameworkUrl: "Build/build.framework.js.gz",
-        codeUrl: "Build/build.wasm.gz",
+        dataUrl: "Build/univrm_webglbuild.data.unityweb",
+        frameworkUrl: "Build/univrm_webglbuild.framework.js.unityweb",
+        codeUrl: "Build/univrm_webglbuild.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "UniVRMTest",
